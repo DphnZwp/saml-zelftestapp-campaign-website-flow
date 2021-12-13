@@ -1,0 +1,325 @@
+@font-face {
+    font-family: "SF-Pro-Display";
+    font-weight: thin;
+    src: url("../assets/fonts/SF-Pro-Display-Thin.otf");
+  }
+  
+  @font-face {
+    font-family: "SF-Pro-Display";
+    font-weight: medium;
+    src: url("../assets/fonts/SF-Pro-Display-Medium.otf");
+  }
+  
+  @font-face {
+    font-family: "SF-Pro-Display";
+    font-weight: regular;
+    src: url("../assets/fonts/SF-Pro-Display-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "SF-Pro-Display";
+    font-weight: bold;
+    src: url("../assets/fonts/SF-Pro-Display-Semibold.otf");
+  }
+  
+  /* Variables css */
+  :root {
+    --dark-blue: #0e49a2;
+    --dark-lighter-blue: #0b53c8;
+    --lighter-blue: #0b61ee;
+    --light-blue: #1e64e7;
+    --secondary: #eff3fa;
+    --white: #fff;
+    --black: #000;
+    --text-color: #2e3a59;
+    --border: #a5c5fe;
+    --cta-color: #d2e2ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: regular;
+  
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: thin;
+    font-size: 3em;
+    color: var(--text-color);
+  }
+
+  h2 {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: regular;
+    font-size: 2.5em;
+    color: var(--text-color);
+  }
+
+  h3 {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: regular;
+    font-size: 2em;
+    color: var(--text-color);
+  }
+
+  p {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: regular;
+    font-size: 1em;
+    color: var(--text-color);
+  }
+
+  .paragraph-margin-top {
+    margin-top: 1em;
+  }
+
+  span {
+    color: var(--light-blue);
+  }
+
+  main {
+    padding-top: 5em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  .cta-light {
+    background-color: var(--white);
+    margin: 0.7em 0;
+    padding: 0.5em 1.5em;
+    border-radius: 0.25em;
+  }
+  
+  .cta-light:hover {
+    transform: scale(1.1) !important;
+  }
+  
+  .cta-blue {
+    color: var(--white);
+    background-color: var(--light-blue);
+    padding: 0.5em 1.5em;
+    border-radius: 0.25em;
+  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-blue > img {
+    margin-left: 0.5em;
+  }  
+  
+  .cta-margin {
+    margin-top: 1em;
+  }
+
+  svg {
+    height: 1.25em;
+    fill: var(--text-color);
+  }
+
+  .home, .pagina-informatie {
+    padding: 4em 1em;
+  }
+  
+  /* HEADER */
+
+  .logo-testasssistent {
+    display: block;
+    width: 15em;
+    margin: 1.5em auto;
+  }
+
+  a {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  header a {
+    font-size: 1.1em;
+    color: var(--text-color);
+  }
+  
+  header a:hover {
+    color: var(--light-blue);
+  }
+
+  .primary-header {
+    height: 4em;
+  }
+
+  .primary-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .primary-navigation>li, select {
+    flex: 50%;
+  }
+
+  .current-highlight {
+    color: var(--light-blue);
+    fill: var(--light-blue);
+  }
+
+  select {
+    font-family:  "SF-Pro-Display", sans-serif;
+    font-size: 1.1em;
+    color: var(--text-color);
+    text-align: left;
+  
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    direction: rtl;
+  }
+  
+  option:checked { 
+    color: var(--light-blue);
+  }
+
+  /* HOME */
+
+  .home {
+    background-color: var(--secondary);
+  }
+
+/* PAGINA INFORMATIE */
+
+.informatie-pagina, .privacy-pagina, 
+.over-ons-pagina, .contact-pagina {
+  background-color: var(--secondary);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 4em 1em;
+
+  position: relative;
+  height: auto;
+
+  background-color: var(--light-blue);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+hr {
+  margin: 1em 0em;
+  border: 0px;
+  border-bottom: 2px solid var(--white);
+  width: 12em;
+}
+
+.footer-icoon {
+  height: 1.5em;
+  fill: var(--white);
+}
+
+@media (min-width: 65em) {
+  
+}
+
+@media (min-width: 70em) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .logo-testasssistent {
+    margin: 0;
+  }
+
+  .primary-header {
+    position: fixed;
+    padding: 0 5em;
+
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 5em;
+    background-color: var(--white);
+    width: 100%;
+  }
+  
+  .primary-navigation {
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5em;
+    list-style: none;
+  }
+
+  select {
+    font-family:  "SF-Pro-Display", sans-serif;
+    font-size: 1.1em;
+    color: var(--text-color);
+    text-align: left;
+  
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    direction: ltr;
+  }
+
+  .primary-navigation {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .primary-navigation>li, select {
+    flex: none;
+  }
+
+  footer {
+    padding: 3em 1em;
+    position: relative;
+    height: auto;
+  
+    background-color: var(--light-blue);
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
