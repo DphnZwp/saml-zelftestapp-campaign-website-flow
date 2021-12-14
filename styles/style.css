@@ -65,28 +65,28 @@
   h1 {
     font-family: "SF-Pro-Display", sans-serif;
     font-weight: thin;
-    font-size: 3em;
+    font-size: 3rem;
     color: var(--text-color);
   }
 
   h2 {
     font-family: "SF-Pro-Display", sans-serif;
     font-weight: regular;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: var(--text-color);
   }
 
   h3 {
     font-family: "SF-Pro-Display", sans-serif;
     font-weight: regular;
-    font-size: 2em;
+    font-size: 2rem;
     color: var(--text-color);
   }
 
   p {
     font-family: "SF-Pro-Display", sans-serif;
     font-weight: regular;
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-color);
   }
 
@@ -187,17 +187,22 @@
     flex-wrap: wrap;
   }
 
-  .primary-navigation>li, select {
+  .primary-navigation>li {
     flex: 50%;
     padding-left: 10%;
   }
 
-  .current-highlight {
-    color: var(--light-blue);
-    fill: var(--light-blue);
+  .primary-navigation>select {
+    flex: 30%;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    margin-top: 0.35em;
   }
 
   select {
+    display: block;
+    position: relative;
+
     font-family:  "SF-Pro-Display", sans-serif;
     font-size: 1.1em;
     color: var(--text-color);
@@ -205,12 +210,29 @@
   
     cursor: pointer;
     border: 0;
+    border-left: 2.4px solid black;
+    height: 2em;
     outline: 0;
     appearance: none;
+  }
+
+  select:hover {
+    color: var(--lighter-blue);
   }
   
   option:checked { 
     color: var(--light-blue);
+  }
+
+  .line-horizontal {
+    border: 0;
+    border-right: 0;
+    height: 0;
+  }
+
+  .lang {
+    margin: 0;
+    padding: 0;
   }
 
   /* HOME */
@@ -254,10 +276,10 @@ footer svg {
   fill: var(--white);
 }
 
-hr {
+.line-vertical {
   margin: 1em 0em;
   border: 0px;
-  border-bottom: 2px solid var(--white);
+  border-bottom: 2.4px solid var(--white);
   width: 12em;
 }
 
@@ -310,17 +332,16 @@ hr {
     list-style: none;
   }
 
+  .line-horizontal {
+    border: 0;
+    border-right: 2.4px solid var(--text-color);
+    height: 3em;
+  }
+
   select {
-    font-family:  "SF-Pro-Display", sans-serif;
-    font-size: 1.1em;
-    color: var(--text-color);
-    text-align: left;
-  
-    cursor: pointer;
+    padding: 0.4em 0;
     border: 0;
     outline: 0;
-    direction: ltr;
-    appearance: auto;
   }
 
   .primary-navigation {
