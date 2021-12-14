@@ -147,7 +147,8 @@
   }
 
   svg {
-    height: 1.25em;
+    height: 1.8em;
+    width: 2em;
     fill: var(--text-color);
   }
 
@@ -160,7 +161,7 @@
   .logo-testasssistent {
     display: block;
     width: 15em;
-    margin: 1.5em auto;
+    margin: 2em auto;
   }
 
   a {
@@ -178,7 +179,7 @@
   }
 
   .primary-header {
-    height: 4em;
+    height: 7em;
   }
 
   .primary-navigation {
@@ -188,6 +189,7 @@
 
   .primary-navigation>li, select {
     flex: 50%;
+    padding-left: 10%;
   }
 
   .current-highlight {
@@ -204,7 +206,7 @@
     cursor: pointer;
     border: 0;
     outline: 0;
-    direction: rtl;
+    appearance: none;
   }
   
   option:checked { 
@@ -235,8 +237,21 @@ footer {
   background-color: var(--light-blue);
 }
 
-.text-white {
+.footer-menu {
+  padding-top: 2em;
+}
+
+footer a,
+footer h2,
+footer h3,
+footer p,
+footer .menu {
+  text-decoration: none;
   color: var(--white);
+}
+
+footer svg {
+  fill: var(--white);
 }
 
 hr {
@@ -271,6 +286,10 @@ hr {
     margin: 0;
   }
 
+  svg {
+    height: 1.25em;
+  }
+
   .primary-header {
     position: fixed;
     padding: 0 5em;
@@ -301,6 +320,7 @@ hr {
     border: 0;
     outline: 0;
     direction: ltr;
+    appearance: auto;
   }
 
   .primary-navigation {
@@ -310,6 +330,7 @@ hr {
 
   .primary-navigation>li, select {
     flex: none;
+    padding-left: 0;
   }
 
   footer {
