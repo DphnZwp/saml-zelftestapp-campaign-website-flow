@@ -90,8 +90,16 @@
     color: var(--text-color);
   }
 
-  .paragraph-margin-top {
+  .margin-top {
     margin-top: 1em;
+  }
+
+  .margin-top-small {
+    margin-top: 0.5em;
+  }
+
+  .margin-bottom {
+    margin-bottom: 1em;
   }
 
   span {
@@ -127,7 +135,7 @@
     transform: scale(1.1) !important;
   }
   
-  .cta-blue {
+  .cta-blue> a {
     color: var(--white);
     background-color: var(--light-blue);
     padding: 0.5em 1.5em;
@@ -138,21 +146,46 @@
     align-items: center;
   }
 
-  .cta-blue > img {
+  .cta-dark-blue > img {
     margin-left: 0.5em;
-  }  
+  }
+  
+  .cta-dark-blue {
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 0.5em 1.5em;
+    border-radius: 0.25em;
+  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .cta-margin {
     margin-top: 1em;
   }
 
-  svg {
+  .svg-small {
     height: 1.8em;
     width: 2em;
+  }
+
+  .gray {
     fill: var(--text-color);
   }
 
-  .home, .pagina-informatie {
+  .white {
+    fill: var(--white);
+  }
+
+  .svg-big {
+    margin: 0 auto 0.5em auto;
+    display: block;
+    height: 5em;
+    fill: var(--light-blue);
+  }
+
+  .home, .pages-information {
     padding: 4em 1em;
   }
   
@@ -210,21 +243,17 @@
   
     cursor: pointer;
     border: 0;
-    border-left: 2.4px solid black;
+    border-left: 2.4px solid var(--text-color);
     height: 2em;
     outline: 0;
     appearance: none;
-  }
-
-  select:hover {
-    color: var(--lighter-blue);
   }
   
   option:checked { 
     color: var(--light-blue);
   }
 
-  .line-horizontal {
+  .line-vertical {
     border: 0;
     border-right: 0;
     height: 0;
@@ -241,52 +270,68 @@
     background-color: var(--secondary);
   }
 
-/* PAGINA INFORMATIE */
+  /* PAGINA INFORMATIE */
 
-.informatie-pagina, .privacy-pagina, 
-.over-ons-pagina, .contact-pagina {
-  background-color: var(--secondary);
-}
+  .information-page, .privacy-page, 
+  .about-us-page, .contact-page {
+    padding: 3em 3em;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 1em;
+  }
 
-/* FOOTER */
+  .information-page, .privacy-page, 
+  .about-us-page {
+    margin-bottom: 3em;
+  }
 
-footer {
-  padding: 4em 1em;
+  /* FOOTER */
 
-  position: relative;
-  height: auto;
+  footer {
+    padding: 4em 5em;
 
-  background-color: var(--light-blue);
-}
+    text-align: center;
 
-.footer-menu {
-  padding-top: 2em;
-}
+    position: relative;
+    height: auto;
 
-footer a,
-footer h2,
-footer h3,
-footer p,
-footer .menu {
-  text-decoration: none;
-  color: var(--white);
-}
+    background-color: var(--light-blue);
+  }
 
-footer svg {
-  fill: var(--white);
-}
+  .footer-menu, .footer-socials {
+    padding-top: 2em;
+  }
 
-.line-vertical {
-  margin: 1em 0em;
-  border: 0px;
-  border-bottom: 2.4px solid var(--white);
-  width: 12em;
-}
+  footer a,
+  footer h2,
+  footer h3,
+  footer p,
+  footer .menu {
+    text-decoration: none;
+    color: var(--white);
+  }
 
-.footer-icoon {
-  height: 1.5em;
-  fill: var(--white);
-}
+  .flex-phone-number, .flex-email, .flex-adress {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+  .flex-phone-number, .flex-email {
+    margin-bottom: 1em;
+  }
+
+  .line-horizontal {
+    margin: 1em auto;
+    border: 0px;
+    border-bottom: 2.4px solid var(--white);
+    width: 10em;
+  }
+
+  .footer-icoon {
+    height: 1.5em;
+    fill: var(--white);
+  }
 
 @media (min-width: 65em) {
   
@@ -308,7 +353,7 @@ footer svg {
     margin: 0;
   }
 
-  svg {
+  .svg-small {
     height: 1.25em;
   }
 
@@ -332,7 +377,7 @@ footer svg {
     list-style: none;
   }
 
-  .line-horizontal {
+  .line-vertical {
     border: 0;
     border-right: 2.4px solid var(--text-color);
     height: 3em;
@@ -358,10 +403,27 @@ footer svg {
     padding: 3em 1em;
     position: relative;
     height: auto;
+
+    text-align: left;
   
     background-color: var(--light-blue);
   
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.footer-menu, .footer-socials {
+  padding-top: 0;
+}
+
+  .footer-contact-information, .footer-socials, .footer-menu {
+    margin-left: 25%;
+  }
+
+  .line-horizontal {
+    margin: 1em 0;
+    border: 0px;
+    border-bottom: 2.4px solid var(--white);
+    width: 12em;
   }
 }
