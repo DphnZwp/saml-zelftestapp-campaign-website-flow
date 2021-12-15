@@ -158,9 +158,11 @@
   }
 
   .margin-left {
+    display: block;
     margin-left: 0.5em;
     width: 28px; 
     height: 14px;
+    fill: var(--white);
   }
   
   .cta-dark-blue {
