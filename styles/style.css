@@ -80,6 +80,13 @@
     font-family: "SF-Pro-Display", sans-serif;
     font-weight: regular;
     font-size: 2rem;
+    color: var(--light-blue);
+  }
+
+  h4 {
+    font-family: "SF-Pro-Display", sans-serif;
+    font-weight: regular;
+    font-size: 1.625rem;
     color: var(--text-color);
   }
 
@@ -90,16 +97,20 @@
     color: var(--text-color);
   }
 
+  .margin-top-large {
+    margin-top: 2em;
+  }
+
   .margin-top {
     margin-top: 1em;
   }
 
   .margin-top-small {
-    margin-top: 0.5em;
+    margin-top: 0.3em;
   }
 
   .margin-bottom {
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
   }
 
   span {
@@ -185,7 +196,7 @@
     fill: var(--light-blue);
   }
 
-  .home, .pages-information {
+  .hero, .pages-information {
     padding: 4em 1em;
   }
   
@@ -207,8 +218,9 @@
     color: var(--text-color);
   }
   
-  header a:hover {
+  .hover-color:hover, .hover-color:hover path {
     color: var(--light-blue);
+    fill: var(--light-blue);
   }
 
   .primary-header {
@@ -243,7 +255,7 @@
   
     cursor: pointer;
     border: 0;
-    border-left: 2.4px solid var(--text-color);
+    border-left: 2.3px solid var(--text-color);
     height: 2em;
     outline: 0;
     appearance: none;
@@ -266,8 +278,12 @@
 
   /* HOME */
 
-  .home {
+  .hero {
     background-color: var(--secondary);
+  }
+
+  .hero-image {
+    display: none;
   }
 
   /* PAGINA INFORMATIE */
@@ -324,7 +340,7 @@
   .line-horizontal {
     margin: 1em auto;
     border: 0px;
-    border-bottom: 2.4px solid var(--white);
+    border-bottom: 2.3px solid var(--white);
     width: 10em;
   }
 
@@ -348,6 +364,8 @@
   .flex {
     display: flex;
   }
+
+  /* HEADER */
 
   .logo-testasssistent {
     margin: 0;
@@ -378,8 +396,10 @@
   }
 
   .line-vertical {
+    position: absolute;
+    margin-left: 34em;
     border: 0;
-    border-right: 2.4px solid var(--text-color);
+    border-right: 2.3px solid var(--text-color);
     height: 3em;
   }
 
@@ -399,6 +419,65 @@
     padding-left: 0;
   }
 
+  .hero, .pages-information {
+    padding: 4em 5em;
+  }
+
+  /* HERO */
+  .hero {
+    display: grid;
+    background-color: var(--secondary);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-information {
+    grid-column: 1/3;
+  }
+
+  .hero-image {
+    display: block;
+    grid-column: 3/4;
+  }
+
+  .p-large {
+    font-size: 1.5rem;
+  }
+
+    /* PAGES INFORMATION */
+
+  .pages-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .information-page {
+    margin-right: 3em;
+    grid-row: 2;
+  }
+
+  .privacy-page {
+    grid-row: 2;
+  }
+
+  .about-us-page {
+    margin-top: 3em;
+    margin-right: 3em;
+    grid-row: 3;
+  }
+
+  .contact-page {
+    margin-top: 3em;
+    grid-row: 3;
+  }
+
+  .information-page, .privacy-page, 
+  .about-us-page {
+    margin-bottom: 0;
+  }
+
+  /* FOOTER */
+
   footer {
     padding: 3em 1em;
     position: relative;
@@ -417,13 +496,13 @@
 }
 
   .footer-contact-information, .footer-socials, .footer-menu {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 
   .line-horizontal {
     margin: 1em 0;
     border: 0px;
-    border-bottom: 2.4px solid var(--white);
+    border-bottom: 2.3px solid var(--white);
     width: 12em;
   }
 }
