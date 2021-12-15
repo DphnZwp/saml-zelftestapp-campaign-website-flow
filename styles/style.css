@@ -157,7 +157,7 @@
     align-items: center;
   }
 
-  .cta-dark-blue > img {
+  .cta-dark-blue > svg {
     margin-left: 0.5em;
   }
   
@@ -412,8 +412,6 @@
   }
 
   .line-vertical {
-    position: absolute;
-    margin-left: 34em;
     border: 0;
     border-right: 2.3px solid var(--text-color);
     height: 3em;
