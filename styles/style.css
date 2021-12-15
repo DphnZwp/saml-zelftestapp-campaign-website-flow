@@ -157,8 +157,10 @@
     align-items: center;
   }
 
-  .cta-dark-blue > svg {
+  .margin-left {
     margin-left: 0.5em;
+    width: 28px; 
+    height: 14px;
   }
   
   .cta-dark-blue {
