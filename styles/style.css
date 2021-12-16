@@ -184,6 +184,7 @@
 
   .svg-small {
     height: 1.8em;
+    width: 1.8em;
     margin-right: 1em;
   }
 
@@ -430,6 +431,7 @@
 
   .svg-small {
     height: 1.25em;
+    width: auto;
     margin-right: 0;
   }
 
