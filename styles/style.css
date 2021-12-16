@@ -182,11 +182,18 @@
     margin-top: 1em;
   }
 
-  .svg-small {
+  .svg-small-margin {
     height: 1.8em;
+    margin-right: 1em;
+  }
+
+  .svg-small-margin-small {
+    height: 1.8em;
+    margin-right: 0.1em;
   }
 
   .gray {
+    color: var(--text-color);
     fill: var(--text-color);
   }
 
@@ -201,7 +208,8 @@
     fill: var(--light-blue);
   }
 
-  .hero, .functions, .pages-information {
+  .hero, .functions, .pages-information, 
+  .information, .instruction {
     padding: 4em 1em;
   }
   
@@ -229,7 +237,7 @@
   }
 
   .primary-header {
-    height: 7em;
+    height: 9.5em;
   }
 
   .primary-navigation {
@@ -240,6 +248,7 @@
   .primary-navigation>li {
     flex: 50%;
     padding-left: 10%;
+    margin-bottom: 0.8em;
   }
 
   .primary-navigation>select {
@@ -281,7 +290,7 @@
     padding: 0;
   }
 
-  /* HOME */
+  /* HOMEPAGE */
 
   /* Hero */
 
@@ -325,9 +334,37 @@
     margin-bottom: 3em;
   }
 
-  /* INFORMATIE PAGINA */
+  /* INFORMATIONPAGE */
 
-  
+  /* Information */
+
+  .information {
+    background-color: var(--secondary);
+  }
+
+  .information-image {
+    display: none;
+  }
+
+  .instruction-first, .instruction-second,
+  .instruction-third, .instruction-fourth {
+    padding: 3em 3em;
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 1em;
+  }
+
+  .instruction-first, .instruction-second,
+  .instruction-third {
+    margin-bottom: 3em;
+  }
+
+  .image-instruction-first {
+    min-width: 12.5em;
+    max-width: 25em;
+    display: block;
+    margin: 0 auto;
+  }
 
   /* FOOTER */
 
@@ -392,7 +429,8 @@
     display: flex;
   }
 
-  .hero, .functions, .pages-information {
+  .hero, .functions, .pages-information,
+  .information, .instruction {
     padding: 4em 5em;
   }
 
@@ -402,8 +440,9 @@
     margin: 0;
   }
 
-  .svg-small {
+  .svg-small-margin {
     height: 1.25em;
+    margin-right: 0;
   }
 
   .primary-header {
@@ -446,30 +485,12 @@
   .primary-navigation>li, select {
     flex: none;
     padding-left: 0;
-  }
-
-   /* FUNCTIONS */
-  
-   .functions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .functions-easy {
-    margin-right: 3em;
-    grid-row: 2;
-  }
-
-  .functions-fast {
-    grid-row: 2;
-  }
-
-  .functions-easy {
     margin-bottom: 0;
   }
 
-  /* HERO */
+  /* HOMEPAGE */
+
+  /* Hero */
   .hero {
     display: grid;
     background-color: var(--secondary);
@@ -489,7 +510,28 @@
     font-size: 1.5rem;
   }
 
-  /* PAGES INFORMATION */
+  /* Functions */
+  
+  .functions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .functions-easy {
+    margin-right: 3em;
+    grid-row: 2;
+  }
+
+  .functions-fast {
+    grid-row: 2;
+  }
+
+  .functions-easy {
+    margin-bottom: 0;
+  }
+
+  /* Pages information*/
 
   .pages-information {
     display: grid;
@@ -520,6 +562,51 @@
   .information-page, .privacy-page, 
   .about-us-page {
     margin-bottom: 0;
+  }
+
+  /* INFORMATIONPAGE */
+
+  /* Information */
+
+  .information {
+    display: grid;
+    background-color: var(--secondary);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .information-information {
+    grid-column: 1/2;
+  }
+
+  .information-image {
+    display: block;
+    grid-column: 2/4;
+    width: 100%;
+  }
+
+  .instruction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .instruction-first, .instruction-second,
+  .instruction-third {
+    margin-bottom: 0;
+  }
+
+  .instruction-first {
+    margin-right: 3em;
+  }
+
+  .instruction-third {
+    margin-top: 3em;
+    margin-right: 3em;
+  }
+
+  .instruction-fourth {
+    margin-top: 3em;
   }
 
   /* FOOTER */
