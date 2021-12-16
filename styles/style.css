@@ -49,6 +49,8 @@
     font-weight: regular;
   
     color: var(--text-color);
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   h1,
@@ -113,6 +115,14 @@
     margin-bottom: 0.4em;
   }
 
+  .margin-left {
+    display: block;
+    margin-left: 0.5em;
+    width: 28px; 
+    height: 14px;
+    fill: var(--white);
+  }
+
   span {
     color: var(--light-blue);
   }
@@ -156,18 +166,10 @@
     justify-content: center;
     align-items: center;
   }
-
-  .margin-left {
-    display: block;
-    margin-left: 0.5em;
-    width: 28px; 
-    height: 14px;
-    fill: var(--white);
-  }
   
   .cta-dark-blue {
     color: var(--white);
-    background-color: var(--dark-blue);
+    background-color: var(--dark-lighter-blue);
     padding: 0.5em 1.5em;
     border-radius: 0.25em;
   
@@ -182,7 +184,6 @@
 
   .svg-small {
     height: 1.8em;
-    width: 2em;
   }
 
   .gray {
@@ -280,19 +281,9 @@
     padding: 0;
   }
 
-  /* FUNCTIONS */
-  .functions-easy, .functions-fast {
-    padding: 3em 3em;
-    text-align: center;
-    background-color: var(--secondary);
-    border-radius: 1em;
-  }
-
-  .functions-easy {
-    margin-bottom: 3em;
-  }
-
   /* HOME */
+
+  /* Hero */
 
   .hero {
     background-color: var(--secondary);
@@ -302,7 +293,24 @@
     display: none;
   }
 
-  /* PAGINA INFORMATIE */
+  /* Functions */
+  .functions-easy, .functions-fast {
+    padding: 3em 3em;
+    text-align: center;
+    background-color: var(--dark-lighter-blue);
+    border-radius: 1em;
+  }
+
+  .functions-easy {
+    margin-bottom: 3em;
+  }
+
+  .functions-easy>svg, .functions-easy>h3, .functions-easy>p, .functions-fast>svg, .functions-fast>h3, .functions-fast>p {
+    fill: var(--white);
+    color: var(--white);
+  }
+
+  /* Pagina informatie */
 
   .information-page, .privacy-page, 
   .about-us-page, .contact-page {
@@ -317,6 +325,10 @@
     margin-bottom: 3em;
   }
 
+  /* INFORMATIE PAGINA */
+
+  
+
   /* FOOTER */
 
   footer {
@@ -325,7 +337,6 @@
     text-align: center;
 
     position: relative;
-    height: auto;
 
     background-color: var(--light-blue);
   }
@@ -515,8 +526,6 @@
 
   footer {
     padding: 3em 1em;
-    position: relative;
-    height: auto;
 
     text-align: left;
   
@@ -524,6 +533,10 @@
   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    width: 100vw;
+    position: relative;
+  bottom: 0;
   }
 
 .footer-menu, .footer-socials {
