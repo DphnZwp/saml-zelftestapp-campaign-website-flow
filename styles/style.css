@@ -182,14 +182,9 @@
     margin-top: 1em;
   }
 
-  .svg-small-margin {
+  .svg-small {
     height: 1.8em;
     margin-right: 1em;
-  }
-
-  .svg-small-margin-small {
-    height: 1.8em;
-    margin-right: 0.1em;
   }
 
   .gray {
@@ -359,13 +354,6 @@
     margin-bottom: 3em;
   }
 
-  .image-instruction-first {
-    min-width: 12.5em;
-    max-width: 25em;
-    display: block;
-    margin: 0 auto;
-  }
-
   /* FOOTER */
 
   footer {
@@ -440,7 +428,7 @@
     margin: 0;
   }
 
-  .svg-small-margin {
+  .svg-small {
     height: 1.25em;
     margin-right: 0;
   }
