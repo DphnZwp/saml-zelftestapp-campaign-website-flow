@@ -185,12 +185,15 @@
   .svg-small {
     height: 1.8em;
     width: 1.8em;
-    margin-right: 1em;
   }
 
-  .gray {
-    color: var(--text-color);
+  .margin-gray {
+    margin-right: 0.8em;
     fill: var(--text-color);
+  }
+
+  .gray-header {
+    color: var(--text-color);
   }
 
   .white {
@@ -210,11 +213,10 @@
   }
   
   /* HEADER */
-
   .logo-testasssistent {
     display: block;
     width: 15em;
-    margin: 2em auto;
+    margin: 2em 0 2em 1em;
   }
 
   a {
@@ -243,7 +245,7 @@
 
   .primary-navigation>li {
     flex: 50%;
-    padding-left: 10%;
+    padding-left: 1em;
     margin-bottom: 0.8em;
   }
 
@@ -355,6 +357,12 @@
     margin-bottom: 3em;
   }
 
+  .image-instruction-first {
+    margin: 0 auto;
+    width: 12.5em;
+    display: block;
+  }
+
   /* FOOTER */
 
   footer {
@@ -402,9 +410,47 @@
     fill: var(--white);
   }
 
-@media (min-width: 65em) {
-  
+/* IPHONE 5 */
+
+@media (max-width: 20em) {
+  .primary-navigation>li {
+    flex: none;
+    padding-left: 1.4em;
+    margin-bottom: 0.8em;
 }
+
+.primary-navigation>select {
+  flex: none;
+  padding-left: 0.5em;
+  margin-left: 1em;
+  padding-top: 0.2em;
+  margin-top: 0.35em;
+}
+
+.margin-gray {
+  margin-right: 0.2em;
+  fill: var(--text-color);
+}
+}
+
+/* IPAD */
+
+@media (min-width: 48em) {
+  .logo-testasssistent {
+    display: block;
+    width: 15em;
+    margin: 2em 0 2em 4em;
+  }
+
+
+  .primary-navigation>li {
+    flex: 50%;
+    padding-left: 4em;
+    margin-bottom: 0.8em;
+  }
+}
+
+/* DESKTOP */
 
 @media (min-width: 70em) {
   body {
@@ -549,8 +595,7 @@
     grid-row: 3;
   }
 
-  .information-page, .privacy-page, 
-  .about-us-page {
+  .pages-information>div {
     margin-bottom: 0;
   }
 
@@ -581,8 +626,7 @@
     grid-template-rows: auto;
   }
 
-  .instruction-first, .instruction-second,
-  .instruction-third {
+  .instruction>div {
     margin-bottom: 0;
   }
 
@@ -597,6 +641,17 @@
 
   .instruction-fourth {
     margin-top: 3em;
+  }
+
+  .image-instruction-first {
+    margin: 0 auto;
+    width: 25em;
+    display: block;
+  }
+
+  .instruction-fourth>h3 {
+    width: 15em;
+    margin: 0 auto;
   }
 
   /* FOOTER */
