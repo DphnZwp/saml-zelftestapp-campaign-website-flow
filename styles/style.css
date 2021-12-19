@@ -222,7 +222,7 @@ button:hover {
 }
 
 /* HEADER */
-.logo-testasssistent {
+.logo {
   display: block;
   width: 18em;
   margin: 2em 0 2em 1em;
@@ -374,7 +374,13 @@ option:checked {
 
 /* PRIVACYPAGE */
 
+.privacy {
+  background-color: var(--secondary);
+}
 
+.privacy-image {
+  display: none;
+}
 
 /* FOOTER */
 
@@ -449,7 +455,7 @@ footer .menu {
 /* IPAD */
 
 @media (min-width: 48em) {
-  .logo-testasssistent {
+  .logo {
     display: block;
     width: 15em;
     margin: 2em 0 2em 4em;
@@ -478,13 +484,14 @@ footer .menu {
   }
 
   .hero-information, .functions, .pages-information,
-  .information, .instruction {
+  .information, .instruction,
+  .privacy {
     padding: 4em 5em;
   }
 
   /* HEADER */
 
-  .logo-testasssistent {
+  .logo {
     margin: 0;
   }
 
@@ -678,7 +685,23 @@ footer .menu {
 
   /* PRIVACYPAGE */
 
+  .privacy {
+    display: grid;
+    background-color: var(--secondary);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
 
+  .privacy-information {
+    grid-column: 1/2;
+  }
+
+  .privacy-image {
+    display: block;
+    grid-column: 2/4;
+    width: 50%;
+    margin: 0 auto;
+  }
 
   /* FOOTER */
 
