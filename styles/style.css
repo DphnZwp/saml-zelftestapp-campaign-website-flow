@@ -217,7 +217,8 @@ button:hover {
 }
 
 .hero-information, .functions, .pages-information, 
-.information, .instruction {
+.information, .instruction,
+.privacy, .privacy-gegevens {
   padding: 4em 1em;
 }
 
@@ -382,6 +383,17 @@ option:checked {
   display: none;
 }
 
+.gegevens, .vragen {
+  padding: 3em 3em;
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 1em;
+}
+
+.gegevens {
+  margin-bottom: 3em;
+}
+
 /* FOOTER */
 
 footer {
@@ -483,12 +495,6 @@ footer .menu {
     display: flex;
   }
 
-  .hero-information, .functions, .pages-information,
-  .information, .instruction,
-  .privacy {
-    padding: 4em 5em;
-  }
-
   /* HEADER */
 
   .logo {
@@ -583,15 +589,12 @@ footer .menu {
 
   .functions-easy {
     margin-right: 3em;
+    margin-bottom: 0;
     grid-row: 2;
   }
 
   .functions-fast {
     grid-row: 2;
-  }
-
-  .functions-easy {
-    margin-bottom: 0;
   }
 
   /* Pages information*/
@@ -701,6 +704,22 @@ footer .menu {
     grid-column: 2/4;
     width: 50%;
     margin: 0 auto;
+  }
+
+  .privacy-gegevens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .gegevens {
+    margin-right: 3em;
+    margin-bottom: 0;
+    grid-row: 2;
+  }
+
+  .vragen {
+    grid-row: 2;
   }
 
   /* FOOTER */
