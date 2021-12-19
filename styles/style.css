@@ -217,7 +217,7 @@ button:hover {
 }
 
 .hero-information, .functions, .pages-information, 
-.information, .instruction,
+.information-information, .instruction,
 .privacy, .privacy-gegevens {
   padding: 4em 1em;
 }
@@ -381,6 +381,7 @@ option:checked {
 
 .privacy-image {
   display: none;
+  opacity: 50%;
 }
 
 .gegevens, .vragen {
@@ -495,6 +496,13 @@ footer .menu {
     display: flex;
   }
 
+  .hero-information, .functions, .pages-information, 
+  .information-information, .instruction,
+  .privacy, .privacy-gegevens,
+  .about-us-information {
+    padding: 4em 5em;
+  }
+
   /* HEADER */
 
   .logo {
@@ -560,9 +568,7 @@ footer .menu {
 
   .hero-information {
     position: absolute;
-    width: 65em;
-    grid-column: 1/3;
-    grid-row: 1;
+    width: 70%;
     z-index: 1;
   }
 
@@ -631,23 +637,22 @@ footer .menu {
 
   /* INFORMATIONPAGE */
 
-  /* Information */
-
   .information {
-    display: grid;
     background-color: var(--secondary);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
   }
 
   .information-information {
-    grid-column: 1/2;
+    position: absolute;
+    z-index: 1;
   }
 
   .information-image {
+    padding: 0;
+    margin: 0;
     display: block;
-    grid-column: 2/4;
     width: 100%;
+    opacity: 50%;
+    z-index: 0;
   }
 
   .instruction {
@@ -720,6 +725,27 @@ footer .menu {
 
   .vragen {
     grid-row: 2;
+  }
+
+  /* ABOUTUSPAGE */
+
+  .about-us {
+    background-color: var(--secondary);
+  }
+
+  .about-us-information {
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .about-us-image {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    opacity: 50%;
+    z-index: 0;
   }
 
   /* FOOTER */
