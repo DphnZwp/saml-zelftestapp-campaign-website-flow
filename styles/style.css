@@ -218,7 +218,8 @@ button:hover {
 
 .hero-information, .functions, .pages-information, 
 .information-information, .instruction,
-.privacy, .privacy-gegevens {
+.privacy, .privacy-gegevens,
+.about-us-information, .partijen {
   padding: 4em 1em;
 }
 
@@ -381,7 +382,6 @@ option:checked {
 
 .privacy-image {
   display: none;
-  opacity: 50%;
 }
 
 .gegevens, .vragen {
@@ -393,6 +393,39 @@ option:checked {
 
 .gegevens {
   margin-bottom: 3em;
+}
+
+/* ABOUTUSPAGE */
+
+.about-us {
+  background-color: var(--secondary);
+}
+
+.about-us-image {
+  display: none;
+}
+
+.streeklab, .centre {
+  padding: 3em 3em;
+  text-align: left;
+}
+
+.streeklab {
+  margin-bottom: 3em;
+}
+
+.logo-streeklab {
+  display: block;
+  margin: 0 auto 3em auto;
+  width: 50%;
+}
+
+.centre {
+  margin-bottom: 3em;
+}
+
+.centre-image {
+  width: 100%;
 }
 
 /* FOOTER */
@@ -499,7 +532,7 @@ footer .menu {
   .hero-information, .functions, .pages-information, 
   .information-information, .instruction,
   .privacy, .privacy-gegevens,
-  .about-us-information {
+  .about-us-information, .partijen {
     padding: 4em 5em;
   }
 
@@ -708,6 +741,7 @@ footer .menu {
     display: block;
     grid-column: 2/4;
     width: 50%;
+    opacity: 50%;
     margin: 0 auto;
   }
 
@@ -746,6 +780,35 @@ footer .menu {
     width: 100%;
     opacity: 50%;
     z-index: 0;
+  }
+
+  .partijen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .streeklab {
+    margin-right: 3em;
+    margin-bottom: 3em;
+    grid-row: 2;
+  }
+
+  .logo-streeklab {
+    margin: 0 auto;
+    grid-column: 2/3;
+    width: 40%;
+    grid-row: 2;
+  }
+
+  .centre {
+    margin-right: 3em;
+    grid-row: 3;
+  }
+
+  .centre-image {
+    width: 100%;
+    grid-row: 3;
   }
 
   /* FOOTER */
