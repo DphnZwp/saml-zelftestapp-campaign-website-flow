@@ -145,17 +145,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-.cta-light {
-  background-color: var(--white);
-  margin: 0.7em 0;
-  padding: 0.5em 1.5em;
-  border-radius: 0.25em;
-}
-
-.cta-light:hover {
-  transform: scale(1.1) !important;
-}
-
 .cta-blue> a {
   color: var(--white);
   background-color: var(--light-blue);
@@ -176,6 +165,17 @@ button:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.cta-submit {
+  background-color: var(--light-blue);
+  padding: 0.5em 1.5em;
+  width: 3.5em;
+  border-radius: 0.25em;
+}
+
+.cta-submit>a {
+  color: var(--white);
 }
 
 .cta-margin {
@@ -205,10 +205,6 @@ button:hover {
   color: var(--text-color);
 }
 
-.white {
-  fill: var(--white);
-}
-
 .svg-big {
   margin: 0 auto 0.5em auto;
   display: block;
@@ -219,7 +215,8 @@ button:hover {
 .hero-information, .functions, .pages-information, 
 .information-information, .instruction,
 .privacy, .privacy-gegevens,
-.about-us-information, .partijen {
+.about-us-information, .partijen
+.contact-inhoud {
   padding: 4em 1em;
 }
 
@@ -428,6 +425,58 @@ option:checked {
   width: 100%;
 }
 
+/* CONTACTPAGE */
+
+.contact {
+  padding: 4em 1em;
+  background-color: var(--secondary);
+}
+
+.contact-gegevens {
+  padding: 3em 3em;
+  background-color: var(--light-blue);
+  border-radius: 1em 1em 0 0;
+}
+
+.selftest-image {
+  margin-top: 3em;
+  width: 58%;
+}
+
+.contact-gegevens>h2, .contact-gegevens>p,
+.flex-phone-number>p, .flex-email>p, .flex-adress>p {
+  color: var(--white);
+}
+
+form {
+  padding: 3em 3em;
+  background-color: var(--secondary);
+  border-radius: 0 0 1em 1em;
+  display:flex;
+  flex-direction:column;
+}
+
+input {
+  padding: 0.5em 0.5em;
+  margin-bottom: 1em;
+  margin-top: 0.4em;
+  border: 0.125em solid var(--light-blue);
+  border-radius: 0.25em;
+}
+
+label {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: regular;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+textarea {
+  padding: 0.5em 0.5em;
+  margin-top: 0.4em;
+  border: 0.125em solid var(--light-blue);
+}
+
 /* FOOTER */
 
 footer {
@@ -472,6 +521,10 @@ footer .menu {
 
 .footer-icoon {
   height: 1.5em;
+  fill: var(--white);
+}
+
+.white {
   fill: var(--white);
 }
 
@@ -532,7 +585,8 @@ footer .menu {
   .hero-information, .functions, .pages-information, 
   .information-information, .instruction,
   .privacy, .privacy-gegevens,
-  .about-us-information, .partijen {
+  .about-us-information, .partijen,
+  .contact, .contact-inhoud {
     padding: 4em 5em;
   }
 
@@ -809,6 +863,26 @@ footer .menu {
   .centre-image {
     width: 100%;
     grid-row: 3;
+  }
+
+  /* CONTACTPAGE */
+
+  .contact-inhoud {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .contact-gegevens {
+    grid-column: 1/2;
+    grid-row: 1;
+    border-radius: 1em 0 0 1em;
+  }
+
+  form {
+    border-radius: 0 1em 1em 0;
+    grid-column: 2/3;
+    grid-row: 1;
   }
 
   /* FOOTER */
