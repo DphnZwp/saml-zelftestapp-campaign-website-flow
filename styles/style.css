@@ -743,7 +743,6 @@ footer .menu {
   }
 
   .primary-navigation>select {
-    flex: 30%;
     padding-left: 0.5em;
     padding-top: 0.2em;
     margin-top: 0.35em;
