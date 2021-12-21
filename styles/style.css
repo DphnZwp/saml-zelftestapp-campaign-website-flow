@@ -265,19 +265,19 @@ header a {
   opacity:1;
 }
 
-.ham_line {
+.ham-line {
 	position: absolute;
 	width: 22px;
 	height: 0.2em;
 	background-color: var(--text-color);
 }
-.ham_line1 {
+.ham-line1 {
 	top: 11px;
 }
-.ham_line2 {
+.ham-line2 {
 	top: 18px;
 }
-.ham_line3 {
+.ham-line3 {
 	top: 25px;
 }
 
@@ -294,14 +294,14 @@ header a {
   opacity:0;
 }
 
-.clicked .ham_line1 {
+.clicked .ham-line1 {
 	transform: rotate(45deg);
 	top: 20px;
 }
-.clicked .ham_line2 {
+.clicked .ham-line2 {
 	width: 0px;
 }
-.clicked .ham_line3 {
+.clicked .ham-line3 {
 	transform: rotate(-45deg);
 	top: 20px;
 }
