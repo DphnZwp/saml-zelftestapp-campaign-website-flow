@@ -506,7 +506,6 @@ option:checked {
 
 .selftest-image {
   margin-top: 3em;
-  width: 58%;
 }
 
 .contact-gegevens>h2, .contact-gegevens>p,
@@ -966,6 +965,11 @@ footer .menu {
     grid-column: 1/2;
     grid-row: 1;
     border-radius: 1em 0 0 1em;
+  }
+
+  .selftest-image {
+    margin-top: 3em;
+    width: 80%;
   }
 
   form {
