@@ -323,7 +323,7 @@ header a {
 }
 
 .primary-navigation>select {
-  flex: 30%;
+  flex: 40%;
   padding-left: 0.5em;
   padding-top: 0.2em;
   margin-top: 0.35em;
@@ -747,11 +747,30 @@ footer .menu {
     height: 3em;
   }
 
-  select {
-    padding: 0.4em 0;
-    border: 0;
-    outline: 0;
+  .primary-navigation>select {
+    flex: 30%;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    margin-top: 0.35em;
   }
+  
+  select {
+    display: block;
+    position: relative;
+  
+    font-family:  "SF-Pro-Display", sans-serif;
+    font-size: 1.1em;
+    color: var(--text-color);
+    text-align: left;
+  
+    cursor: pointer;
+    border: 0;
+    border-left: 0;
+    height: 2em;
+    outline: 0;
+    appearance: none;
+  }
+  
 
   .primary-navigation {
     display: flex;
