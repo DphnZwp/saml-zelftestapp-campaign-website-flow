@@ -430,7 +430,7 @@ option:checked {
   margin-bottom: 3em;
 }
 
-.image-instruction-first {
+.image-instruction {
   margin: 0 auto;
   width: 12.5em;
   display: block;
@@ -890,7 +890,7 @@ footer .menu {
     grid-row: 3;
   }
 
-  .image-instruction-first {
+  .image-instruction {
     margin: 0 auto;
     width: 25em;
     display: block;
