@@ -172,6 +172,10 @@ button:hover {
   padding: 0.5em 1.5em;
   width: 3.5em;
   border-radius: 0.25em;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta-submit>a {
@@ -464,6 +468,14 @@ input {
   border-radius: 0.25em;
 }
 
+input:valid {
+  border-color:green;
+}
+
+input:invalid {
+  border-color:var(--light-blue);
+}
+
 label {
   font-family: "SF-Pro-Display", sans-serif;
   font-weight: regular;
@@ -475,6 +487,14 @@ textarea {
   padding: 0.5em 0.5em;
   margin-top: 0.4em;
   border: 0.125em solid var(--light-blue);
+}
+
+textarea:valid {
+  border-color:green;
+}
+
+textarea:invalid {
+  border-color:var(--light-blue);
 }
 
 /* FOOTER */
