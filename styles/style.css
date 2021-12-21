@@ -427,6 +427,7 @@ option:checked {
 
 .centre-image {
   width: 100%;
+  margin-bottom: 3em;
 }
 
 /* CONTACTPAGE */
@@ -881,6 +882,7 @@ footer .menu {
   }
 
   .centre-image {
+    margin-bottom: 0;
     width: 100%;
     grid-row: 3;
   }
