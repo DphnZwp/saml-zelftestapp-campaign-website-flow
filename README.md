@@ -1,11 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # 🧪 TestAssistent website
-De Zelftest App zit momenteel in de designfase, en er is behoefte aan een campagne website
-om de App te kunnen promoten en de campagne website moet voldoen aan de huisstijl en
-moet responsive zijn. Een eerste prototype van de campagne site is gebouwd. De flow van 
-de (inline navigatie) van de landingspagina en de navigatie naar de detailpagina’s moet 
-verbeterd worden.
+De TestAssistent website heeft een landingspagina met detailpagina's. Dit zijn alle detailpagina's: contact, hoe werkt het en een
+pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 
 ## 📙 Inhoudsopgave
 
@@ -20,9 +17,11 @@ verbeterd worden.
 
 [🌐 Live Versie](https://daphnetestassistent.student.fdnd.nl/)
 
-SAML wilt een campagne website voor de nieuwe testassistent.com app. Hierbij is er een one page ontwikkelt met behulp van HTML, CSS & JS om deze weer te geven.
-
-![TestAssistent Mockup](https://raw.githubusercontent.com/JustinLung/saml-zelftestapp-campaign-website/main/docs/testassistent_mockup.jpg)
+De Zelftest App zit momenteel in de designfase, en er is behoefte aan een campagne website
+om de App te kunnen promoten en de campagne website moet voldoen aan de huisstijl en
+moet responsive zijn. Een eerste prototype van de campagne site is gebouwd. De flow van 
+de (inline navigatie) van de landingspagina en de navigatie naar de detailpagina’s moet 
+verbeterd worden.
 
 
 ## 🐸 Kenmerken
