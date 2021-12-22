@@ -1,5 +1,3 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # 🧪 TestAssistent Website Flow
 ![TestAssistent website](https://user-images.githubusercontent.com/69635977/147148550-84570600-3a0a-4766-a862-5697892bacf6.png)
 
