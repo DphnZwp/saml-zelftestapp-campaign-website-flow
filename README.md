@@ -1,7 +1,11 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# TestAssistent website
+De Zelftest App zit momenteel in de designfase, en er is behoefte aan een campagne website
+om de App te kunnen promoten en de campagne website moet voldoen aan de huisstijl en
+moet responsive zijn. Een eerste prototype van de campagne site is gebouwd. De flow van 
+de (inline navigatie) van de landingspagina en de navigatie naar de detailpagina’s moet 
+verbeterd worden.
 
 ## Inhoudsopgave
 
