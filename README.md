@@ -39,14 +39,14 @@ pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 
 Hieronder zijn commandlines van HTTPS en SSH die je kunt uitvoeren in de opdrachtprompt om het project te clonen en om naar de root directory te gaan.
 
-Installeren met HTTPS
+**Installeren met HTTPS**
 
 ```
 git clone https://github.com/DphnZwp/saml-zelftestapp-campaign-website-flow.git
 cd saml-zelftestapp-campaign-website
 ```
 
-Installeren met SSH
+**Installeren met SSH**
 
 ```
 git@github.com:DphnZwp/saml-zelftestapp-campaign-website-flow.git
