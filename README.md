@@ -1,5 +1,9 @@
 # 🧪 TestAssistent Website Flow
+
 ![TestAssistent website](https://user-images.githubusercontent.com/69635977/147148550-84570600-3a0a-4766-a862-5697892bacf6.png)
+
+## ⛩️ Beschrijving
+[🌐 https://daphnetestassistent.student.fdnd.nl](https://daphnetestassistent.student.fdnd.nl/)
 
 De TestAssistent website heeft een landingspagina met detailpagina's. Dit zijn alle detailpagina's: contact, hoe werkt het en een
 pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
@@ -12,17 +16,6 @@ pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 - [Gebruik](#gebruik)
 - [Bronnen](#bronnen)
 - [Licentie](#licentie)
-
-## ⛩️ Beschrijving
-
-[🌐 Live Versie](https://daphnetestassistent.student.fdnd.nl/)
-
-De Zelftest App zit momenteel in de designfase, en er is behoefte aan een campagne website
-om de App te kunnen promoten en de campagne website moet voldoen aan de huisstijl en
-moet responsive zijn. Een eerste prototype van de campagne site is gebouwd. De flow van 
-de (inline navigatie) van de landingspagina en de navigatie naar de detailpagina’s moet 
-verbeterd worden.
-
 
 ## 🐸 Kenmerken
 
@@ -40,14 +33,20 @@ verbeterd worden.
 
 ## 💥 Installatie
 
-Installeren met HTTPS
+1. Clone of download deze respository.
+2. Ga naar de root directory van het project.
+3. Open het index.html bestand. Hier kan je de homepagina zien van de website.
+
+Hieronder zijn commandlines van HTTPS en SSH die je kunt uitvoeren in de opdrachtprompt om het project te clonen en om naar de root directory te gaan.
+
+**Installeren met HTTPS**
 
 ```
 git clone https://github.com/DphnZwp/saml-zelftestapp-campaign-website-flow.git
 cd saml-zelftestapp-campaign-website
 ```
 
-Installeren met SSH
+**Installeren met SSH**
 
 ```
 git@github.com:DphnZwp/saml-zelftestapp-campaign-website-flow.git
