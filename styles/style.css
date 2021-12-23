@@ -271,13 +271,13 @@ header a {
 	height: 0.2em;
 	background-color: var(--text-color);
 }
-.ham-line1 {
+.ham-line-one {
 	top: 11px;
 }
-.ham-line2 {
+.ham-line-two {
 	top: 18px;
 }
-.ham-line3 {
+.ham-line-three {
 	top: 25px;
 }
 
@@ -294,14 +294,14 @@ header a {
   opacity:0;
 }
 
-.clicked .ham-line1 {
+.clicked .ham-line-one {
 	transform: rotate(45deg);
 	top: 20px;
 }
-.clicked .ham-line2 {
+.clicked .ham-line-two {
 	width: 0px;
 }
-.clicked .ham-line3 {
+.clicked .ham-line-three {
 	transform: rotate(-45deg);
 	top: 20px;
 }
@@ -652,6 +652,7 @@ footer .menu {
 /* IPAD */
 
 @media (min-width: 48em) {
+  /* HEADER */
   .logo {
     display: block;
     width: 15em;
@@ -663,6 +664,18 @@ footer .menu {
     padding-left: 4em;
     margin-bottom: 0.8em;
   }
+
+  /* CONTACTPAGE */
+
+  form {
+    padding: 3em 3em;
+    background-color: var(--secondary);
+    border-radius: 0 0 1em 1em;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* FOOTER */
 
   footer {
     padding: 4em 15em;
