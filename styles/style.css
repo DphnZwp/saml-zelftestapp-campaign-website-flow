@@ -271,13 +271,13 @@ header a {
 	height: 0.2em;
 	background-color: var(--text-color);
 }
-.ham-line-one {
+.ham-line1 {
 	top: 11px;
 }
-.ham-line-two {
+.ham-line2 {
 	top: 18px;
 }
-.ham-line-three {
+.ham-line3 {
 	top: 25px;
 }
 
@@ -294,14 +294,14 @@ header a {
   opacity:0;
 }
 
-.clicked .ham-line-one {
+.clicked .ham-line1 {
 	transform: rotate(45deg);
 	top: 20px;
 }
-.clicked .ham-line-two {
+.clicked .ham-line2 {
 	width: 0px;
 }
-.clicked .ham-line-three {
+.clicked .ham-line3 {
 	transform: rotate(-45deg);
 	top: 20px;
 }
