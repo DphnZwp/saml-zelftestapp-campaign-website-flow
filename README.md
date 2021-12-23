@@ -37,7 +37,7 @@ pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 2. Ga naar de root directory van het project.
 3. Open het index.html bestand. Hier kan je de homepagina zien van de website.
 
-Hieronder kan je zien hoe je moet clonen en hoe je naar de root directory kan gaan.
+Hieronder kan je zien hoe je moet clonen en hoe je naar de root directory kan gaan. Dit zijn commandlines die je kunt uitvoeren in de opdrachtprompt.
 
 Installeren met HTTPS
 
