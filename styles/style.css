@@ -205,10 +205,6 @@ button:hover {
   color: var(--light-blue);
 }
 
-.gray-header {
-  color: var(--text-color);
-}
-
 .svg-big {
   margin: 0 auto 0.5em auto;
   display: block;
@@ -246,6 +242,10 @@ header a {
 .hover-color:hover, .hover-color:hover path {
   color: var(--light-blue);
   fill: var(--light-blue);
+}
+
+.gray-header {
+  color: var(--text-color);
 }
 
 /* hambuger menu */
@@ -607,6 +607,13 @@ footer .menu {
 /* IPHONE 5 */
 
 @media (max-width: 20em) {
+  .margin-gray {
+    margin-right: 0.2em;
+    fill: var(--text-color);
+  }
+
+  /* HEADER */
+
   .logo {
     width: 12em;
   }
@@ -639,10 +646,7 @@ footer .menu {
     margin-top: 0.35em;
   }
 
-  .margin-gray {
-    margin-right: 0.2em;
-    fill: var(--text-color);
-  }
+  /* FOOTER */
 
   footer {
     padding: 4em 1em;
@@ -653,6 +657,7 @@ footer .menu {
 
 @media (min-width: 48em) {
   /* HEADER */
+
   .logo {
     display: block;
     width: 15em;
@@ -1052,9 +1057,9 @@ footer .menu {
   bottom: 0;
   }
 
-.footer-menu, .footer-socials {
-  padding-top: 0;
-}
+  .footer-menu, .footer-socials {
+    padding-top: 0;
+  }
 
   .footer-contact-information, .footer-socials, .footer-menu {
     margin-left: 15%;
