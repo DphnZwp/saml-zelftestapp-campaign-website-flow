@@ -2,7 +2,8 @@
 ![TestAssistent website](https://user-images.githubusercontent.com/69635977/147148550-84570600-3a0a-4766-a862-5697892bacf6.png)
 
 ## ⛩️ Beschrijving
-[🌐 Live Versie](https://daphnetestassistent.student.fdnd.nl/)
+[🌐 https://daphnetestassistent.student.fdnd.nl](https://daphnetestassistent.student.fdnd.nl/)
+
 De TestAssistent website heeft een landingspagina met detailpagina's. Dit zijn alle detailpagina's: contact, hoe werkt het en een
 pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 
