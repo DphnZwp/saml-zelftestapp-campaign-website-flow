@@ -33,6 +33,12 @@ pagina die uitlegt hoe de app omgaat met de privacy van gebruikers.
 
 ## 💥 Installatie
 
+1. Clone of download deze respository.
+2. Ga naar de root directory van het project.
+3. Open het index.html bestand. Hier kan je de homepagina zien van de website.
+
+Hieronder kan je zien hoe je moet clonen en hoe je naar de root directory kan gaan.
+
 Installeren met HTTPS
 
 ```
